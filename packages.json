@@ -1,0 +1,123 @@
+{
+    "qubes-core-admin-addon-bridge-device": {
+        "references": {
+            "origin": "https://github.com/fepitre/qubes-core-admin-addon-bridge-device",
+            "issue": "https://github.com/QubesOS/qubes-issues/issues/5359"
+        },
+        "releases": {
+            "4.0": {
+                "branch": "master"
+            },
+            "4.1": {
+                "branch": "master"
+            }
+        }
+    },
+    "qubes-core-agent-linux-addon-bridge-device": {
+        "references": {
+            "origin": "https://github.com/fepitre/qubes-core-agent-linux-addon-bridge-device",
+            "issue": "https://github.com/QubesOS/qubes-issues/issues/5359"
+        },
+        "releases": {
+            "4.0": {
+                "branch": "master"
+            },
+            "4.1": {
+                "branch": "master"
+            }
+        }
+    },
+    "qubes-desktop-linux-i3-gaps": {
+        "references": {
+            "origin": "https://github.com/fepitre/qubes-desktop-linux-i3-gaps",
+            "issue": "https://github.com/QubesOS/qubes-issues/issues/5774"
+        },
+        "releases": {
+            "4.0": {
+                "branch": "master"
+            },
+            "4.1": {
+                "branch": "master"
+            }
+        }
+    },
+    "qubes-polybar": {
+        "references": {
+            "origin": "https://github.com/fepitre/qubes-polybar",
+            "issue": ""
+        },
+        "releases": {
+            "4.0": {
+                "branch": "master"
+            }
+        }
+    },
+    "qubes-qmenu": {
+        "references": {
+            "origin": "https://github.com/sine3o14nnae/qmenu",
+            "issue": "https://github.com/QubesOS/qubes-issues/issues/5255"
+        },
+        "releases": {
+            "4.0": {
+                "branch": "master"
+            },
+            "4.1": {
+                "branch": "master"
+            }
+        }
+    },
+    "qubes-qvm-screenshot-tool": {
+        "references": {
+            "origin": "https://github.com/evadogstar/qvm-screenshot-tool",
+            "issue": "https://github.com/QubesOS/qubes-issues/issues/953"
+        },
+        "releases": {
+            "4.0": {
+                "branch": "master"
+            },
+            "4.1": {
+                "branch": "master"
+            }
+        }
+    },
+    "qubes-remote-desktop": {
+        "references": {
+            "origin": "https://github.com/QubesOS/qubes-issues/issues/5358",
+            "issue": "https://github.com/fepitre/qubes-remote-desktop"
+        },
+        "releases": {
+            "4.0": {
+                "branch": "master"
+            },
+            "4.1": {
+                "branch": "master"
+            }
+        }
+    },
+    "qubes-rofi": {
+        "references": {
+            "origin": "https://github.com/fepitre/qubes-rofi",
+            "issue": ""
+        },
+        "releases": {
+            "4.0": {
+                "branch": "master"
+            }
+        }
+    },
+    "qubes-tunnel": {
+        "references": {
+            "origin": "https://github.com/tasket/qubes-tunnel",
+            "issue": "https://github.com/QubesOS/qubes-issues/issues/3503"
+        },
+        "releases": {
+            "4.0": {
+                "branch": "master"
+            },
+            "4.1": {
+                "branch": "master"
+            }
+        }
+    }
+}
+    
