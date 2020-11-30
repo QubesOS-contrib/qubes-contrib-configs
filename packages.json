@@ -1,4 +1,18 @@
 {
+    "qubes-app-split-browser": {
+        "references": {
+            "origin": "https://github.com/rustybird/qubes-app-split-browser",
+            "issue": "https://github.com/QubesOS/qubes-issues/issues/2469"
+        },
+        "releases": {
+            "4.0": {
+                "branch": "master"
+            },
+            "4.1": {
+                "branch": "master"
+            }
+        }
+    },
     "qubes-app-split-git": {
         "references": {
             "origin": "https://github.com/woju/qubes-app-split-git",
