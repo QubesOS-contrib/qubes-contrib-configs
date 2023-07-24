@@ -1,0 +1,43 @@
+git:
+  baseurl: https://github.com
+  prefix: QubesOS-contrib/qubes-
+  branch: master
+  maintainers:
+    # fepitre's Qubes OS key
+    - 9FA64B92F95E706BF28E2CA6484010B5CDC576E2
+    # fepitre's ITL key
+    - 77EEEF6D0386962AEA8CF84A9B8273F80AC219E6
+
+backend-vmm: xen
+debug: true
+verbose: true
+qubes-release: r4.2
+
+executor:
+  type: qubes
+  options:
+    dispvm: "builder-dvm"
+
+stages:
+  - fetch
+  - prep
+  - build
+  - post
+  - verify
+  - sign:
+      executor:
+        type: local
+  - publish:
+      executor:
+        type: local
+  - upload:
+      executor:
+        type: local
+
+components:
+  - contrib-configs:
+      packages: false
+      fetch-versions-only: false
+  - app-split-browser
+  - app-split-git
+  - tunnel

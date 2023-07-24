@@ -1,0 +1,43 @@
+# Configuration for Qubes OS build server: Qubes R4.2 - host packages
+
+include:
+ - /home/user/builder-r4.2/sources/contrib-configs/example-configs/qubes-os-contrib-r4.2.yml
+
+gpg-client: qubes-gpg-client-wrapper
+repository-publish:
+  components: current-testing
+
+use-qubes-repo: {}
+
+fetch-versions-only: true
+reuse-fetched-source: true
+
+distributions:
+ - host-fc37
+
++components:
+  - builder-rpm:
+      fetch-versions-only: false
+
+templates: []
+
+sign-key:
+  rpm: '04A8F986B97FBCB838F08C305FE4986AD0941E87'
+
+repository-upload-remote-host:
+  rpm: 'contrib.qubes-os.org:/pub/qubes/repo/contrib/yum/r4.2'
+
+github:
+  maintainers:
+    # marmarek
+    '17B7CC1986BD3D28C41475B6846D6B709C6E2E7F':
+      distributions: _all_
+      components: _all_
+    # fepitre's Qubes OS key
+    '9FA64B92F95E706BF28E2CA6484010B5CDC576E2':
+      distributions: _all_
+      components: _all_
+    # fepitre's ITL key
+    '77EEEF6D0386962AEA8CF84A9B8273F80AC219E6':
+      distributions: _all_
+      components: _all_
