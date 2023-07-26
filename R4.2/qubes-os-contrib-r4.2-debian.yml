@@ -23,10 +23,10 @@ distributions:
 templates: []
 
 sign-key:
-  rpm: 'FC96B46D36C606C8B22A376DA8F7A1DC99F29DAA'
+  deb: 'FC96B46D36C606C8B22A376DA8F7A1DC99F29DAA'
 
 repository-upload-remote-host:
-  rpm: 'contrib.qubes-os.org:/pub/qubes/repo/contrib/deb/r4.2'
+  deb: 'contrib.qubes-os.org:/pub/qubes/repo/contrib/deb/r4.2'
 
 github:
   maintainers:
