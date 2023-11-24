@@ -18,7 +18,9 @@ distributions:
 
 +components:
   - builder-rpm:
+      packages: False
       fetch-versions-only: false
+      branch: main
 
 templates: []
 

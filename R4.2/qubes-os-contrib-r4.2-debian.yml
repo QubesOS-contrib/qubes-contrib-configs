@@ -18,7 +18,9 @@ distributions:
 
 +components:
   - builder-debian:
+      packages: False
       fetch-versions-only: false
+      branch: main
 
 templates: []
 
