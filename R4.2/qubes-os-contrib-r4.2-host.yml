@@ -19,6 +19,7 @@ distributions:
   - builder-rpm:
       packages: False
       fetch-versions-only: false
+      prefix: QubesOS/qubes-
       branch: main
 
 templates: []

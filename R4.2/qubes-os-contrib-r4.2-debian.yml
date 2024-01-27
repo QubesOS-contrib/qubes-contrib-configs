@@ -20,6 +20,7 @@ distributions:
   - builder-debian:
       packages: False
       fetch-versions-only: false
+      prefix: QubesOS/qubes-
       branch: main
 
 templates: []
