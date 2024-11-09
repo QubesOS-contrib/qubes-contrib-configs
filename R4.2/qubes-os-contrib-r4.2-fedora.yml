@@ -16,6 +16,7 @@ distributions:
  - vm-fc38
  - vm-fc39
  - vm-fc40
+ - vm-fc41
 
 +components:
   - builder-rpm:
