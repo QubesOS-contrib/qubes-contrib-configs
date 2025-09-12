@@ -16,7 +16,7 @@ qubes-release: r4.2
 executor:
   type: qubes
   options:
-    dispvm: "builder-dvm"
+    dispvm: "@dispvm"
 
 stages:
   - fetch
