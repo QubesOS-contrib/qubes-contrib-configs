@@ -41,3 +41,6 @@ components:
   - app-split-browser
   - app-split-git
   - tunnel
+  - securedrop-workstation-keyring:
+      url: https://github.com/QubesOS-contrib/securedrop-workstation-keyring
+      branch: main
