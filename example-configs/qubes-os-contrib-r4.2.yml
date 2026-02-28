@@ -38,6 +38,7 @@ components:
   - contrib-configs:
       packages: false
       fetch-versions-only: false
+      branch: main
   - app-split-browser
   - app-split-git
   - tunnel
