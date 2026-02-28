@@ -46,5 +46,6 @@ github:
       components: _all_
     # rustybird
     '84B59BCFC62B129FE1B06D04469D78F47AAF2ADF':
+      distributions: _all_
       components:
         - app-split-browser
