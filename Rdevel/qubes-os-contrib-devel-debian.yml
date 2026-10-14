@@ -1,0 +1,55 @@
+# Configuration for Qubes OS build server: Qubes devel - Debian packages
+
+include:
+ - /home/user/builder-devel/sources/contrib-configs/example-configs/qubes-os-contrib-main.yml
+
+gpg-client: qubes-gpg-client-wrapper
+repository-publish:
+  components: current-testing
+
+use-qubes-repo: {}
+
+fetch-versions-only: false
+increment-devel-versions: true
+reuse-fetched-source: true
+
+distributions:
+ - vm-bookworm
+ - vm-trixie
+ - vm-forky
+
++components:
+  - builder-debian:
+      packages: False
+      fetch-versions-only: false
+      prefix: QubesOS/qubes-
+      branch: main
+
+templates: []
+
+sign-key:
+  deb: '8181615705FCEECAF211424D2626E7FDA818164A'
+
+repository-upload-remote-host:
+  deb: 'contrib.qubes-os.org:/pub/qubes/repo/contrib/deb/devel'
+
+github:
+  message-templates-dir: /home/user/qubes-builderv2-github/templates-status-only
+  maintainers:
+    # marmarek
+    '17B7CC1986BD3D28C41475B6846D6B709C6E2E7F':
+      distributions: _all_
+      components: _all_
+    # fepitre's Qubes OS key
+    '9FA64B92F95E706BF28E2CA6484010B5CDC576E2':
+      distributions: _all_
+      components: _all_
+    # fepitre's ITL key
+    '77EEEF6D0386962AEA8CF84A9B8273F80AC219E6':
+      distributions: _all_
+      components: _all_
+    # rustybird
+    '84B59BCFC62B129FE1B06D04469D78F47AAF2ADF':
+      distributions: _all_
+      components:
+        - app-split-browser
